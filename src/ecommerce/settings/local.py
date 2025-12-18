@@ -24,15 +24,16 @@ SECRET_KEY = '@!-)jwmuzh8btr380g61=g+#&zzei&dz2(&=xbvxztady)_p(r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['13.202.138.199', '127.0.0.1', 'localhost']
+
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'hungrypy@gmail.com' # sendgrid
+EMAIL_HOST_USER = 'mail.scaryshadows@gmail.com' # sendgrid
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'yourpassword')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Python ecommerce <hungrypy@gmail.com>'
-BASE_URL = '127.0.0.1:8000'
+BASE_URL = 'http://13.202.138.199:8070/'
 
 MANAGERS = (
     ('Justin Mitchel', "hungrypy@gmail.com"),
