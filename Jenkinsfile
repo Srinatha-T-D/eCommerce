@@ -63,10 +63,6 @@ pipeline {
             }
         }
         
-        stage('Trigger CI') {
-            steps {
-                build job:"CD-eCommerce", wait:true
-            }
-        }
+        
     }
 }
